@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="iassistent:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="iassistent.war">
-      <element id="artifact" artifact-name="iassistent:war exploded" />
-    </root>
-  </artifact>
-</component>
