@@ -1,4 +1,4 @@
-package com.iassistent.server;
+package com.iassistent.server.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

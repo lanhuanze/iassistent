@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="BaseDao" class="com.iassistent.server.dao.impl.BaseDaoImpl" abstract="true">
+        <property name="jdbcTemplate" ref="JdbcTemplate"/>
+    </bean>
+
+    <bean id="AnonymousDataDao" class="com.iassistent.server.dao.impl.AnonymousDataDaoImpl" parent="BaseDao"/>
+</beans>
