@@ -20,7 +20,7 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
 			/WEB-INF/spring-jdbc.xml,
-			/WEB-INF/spring-mvc-servlet.xml,
+			/WEB-INF/mvc-dispatcher-servlet.xml,
 			/WEB-INF/spring-service.xml,
 			/WEB-INF/spring-dao.xml
 		</param-value>
