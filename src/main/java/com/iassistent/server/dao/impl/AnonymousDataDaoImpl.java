@@ -1,17 +1,36 @@
 package com.iassistent.server.dao.impl;
 
 import com.iassistent.server.dao.AnonymousDataDao;
+import com.iassistent.server.module.AnonymousData;
 import com.iassistent.server.sql.MySQL;
+import org.springframework.jdbc.core.PreparedStatementSetter;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  * Created by lan on 11/21/14.
  */
-public class AnonymousDataDaoImpl<AnonymousData> extends BaseDaoImpl implements AnonymousDataDao<AnonymousData>, MySQL.AnonymousDataSQL {
+public class AnonymousDataDaoImpl extends BaseDaoImpl implements AnonymousDataDao, MySQL.AnonymousDataSQL {
 
     @Override
-    public int create(AnonymousData anonymousData) {
+    public int create(final AnonymousData d) {
 
-        return jdbcTemplate.update(CREATE);
+        PreparedStatementSetter pss = new PreparedStatementSetter() {
+            @Override
+            public void setValues(PreparedStatement ps) throws SQLException {
+                int i = 1;
+                ps.setString(i++, d.getId());
+                ps.setString(i++, d.getClientType());
+                ps.setTimestamp(i++, toTimestamp(d.getCreateTime()));
+                ps.setString(i++, d.getClientVersion());
+                ps.setString(i++, d.getClientId());
+                ps.setString(i++, d.getIp());
+                ps.setString(i++, d.getCarrier());
+            }
+        };
+
+        return jdbcTemplate.update(CREATE, pss);
     }
 
     @Override

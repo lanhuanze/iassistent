@@ -18,14 +18,14 @@ public abstract class BaseDaoImpl {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    public Timestamp toTimestamp(Date date) {
+    protected Timestamp toTimestamp(Date date) {
         if(date == null) {
             return null;
         }
         return new Timestamp(date.getTime());
     }
 
-    public Date getDate(ResultSet rs, String name) throws SQLException{
+    protected Date getDate(ResultSet rs, String name) throws SQLException{
        Timestamp t = rs.getTimestamp(name);
         if(t == null) {
             return null;
