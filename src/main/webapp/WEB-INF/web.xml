@@ -16,13 +16,17 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
 			/WEB-INF/spring-jdbc.xml,
-			/WEB-INF/mvc-dispatcher-servlet.xml,
 			/WEB-INF/spring-service.xml,
-			/WEB-INF/spring-dao.xml
+			/WEB-INF/spring-dao.xml,
+			/WEB-INF/mvc-dispatcher-servlet.xml
 		</param-value>
 	</context-param>
 </web-app>
