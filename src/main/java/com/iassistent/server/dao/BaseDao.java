@@ -1,6 +1,6 @@
 package com.iassistent.server.dao;
 
-import com.iassistent.server.module.AbstractModule;
+import com.iassistent.server.enities.AbstractModule;
 
 /**
  * Created by lan on 11/21/14.

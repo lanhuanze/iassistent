@@ -7,4 +7,5 @@
     </bean>
 
     <bean id="AnonymousDataDao" class="com.iassistent.server.dao.impl.AnonymousDataDaoImpl" parent="BaseDao"/>
+    <bean id="AccountDao" class="com.iassistent.server.dao.impl.AccountDaoImpl" parent="BaseDao"/>
 </beans>

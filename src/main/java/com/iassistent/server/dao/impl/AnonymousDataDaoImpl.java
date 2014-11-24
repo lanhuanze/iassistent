@@ -1,7 +1,7 @@
 package com.iassistent.server.dao.impl;
 
 import com.iassistent.server.dao.AnonymousDataDao;
-import com.iassistent.server.module.AnonymousData;
+import com.iassistent.server.enities.AnonymousData;
 import com.iassistent.server.sql.MySQL;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 

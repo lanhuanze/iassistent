@@ -1,4 +1,4 @@
-package com.iassistent.server.module;
+package com.iassistent.server.enities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

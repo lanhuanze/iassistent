@@ -16,7 +16,7 @@ program
   .option('-i, --auto-inject <includefiles>', 'Treat the test list as a set of mocha JS files, and automatically generate HTML files with which to test test.  \'includefiles\' should be a comma-separated list of paths to javascript files to include in each of the generated HTML files', make_list, null)
   .option('-p, --provider <name>', 'Use the given provider (defaults to "casper").  Currently, may be "casper" or "zombie"', 'casper')
   .option('-g, --generate-html', 'Instead of running the tests, just return the path to the generated HTML file, then wait for user interaction to exit (should be used with .js tests).')
-  .option('-o, --open-in-browser', 'Open the generated HTML files in a web browser using the "open" module (must be used with the "-g"/"--generate-html" option).')
+  .option('-o, --open-in-browser', 'Open the generated HTML files in a web browser using the "open" enities (must be used with the "-g"/"--generate-html" option).')
   .option('--output-html', 'Instead of running the tests, just output the generated HTML source to STDOUT (should be used with .js tests)')
   .option('-d, --debug', 'Show debug output (the "console" event) from the provider')
   .option('-r, --relative', 'Use relative paths in the generated HTML file')

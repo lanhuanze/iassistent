@@ -1,7 +1,6 @@
 package com.iassistent.server.service;
 
-import com.iassistent.server.module.AnonymousData;
-import com.iassistent.server.result.NonObject;
+import com.iassistent.server.enities.AnonymousData;
 import com.iassistent.server.result.Result;
 
 /**

@@ -3,13 +3,11 @@ package com.iassistent.server.service.impl;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.iassistent.server.dao.AnonymousDataDao;
-import com.iassistent.server.module.AnonymousData;
-import com.iassistent.server.result.NonObject;
+import com.iassistent.server.enities.AnonymousData;
 import com.iassistent.server.result.Result;
 import com.iassistent.server.service.AnonymousService;
 import com.iassistent.server.utils.GsonHelper;
 import com.iassistent.server.utils.ID;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
 
 import java.lang.reflect.Type;

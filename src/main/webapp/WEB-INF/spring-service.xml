@@ -5,4 +5,8 @@
     <bean id="AnonymousService" class="com.iassistent.server.service.impl.AnonymousServiceImpl">
         <property name="anonymousDataDao" ref="AnonymousDataDao"/>
     </bean>
+
+    <bean id="AccountService" class="com.iassistent.server.service.impl.AccountServiceImpl">
+        <property name="accountDao" ref="AccountDao"/>
+    </bean>
 </beans>
