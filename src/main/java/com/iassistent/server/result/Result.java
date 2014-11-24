@@ -15,8 +15,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Result<T> {
-    private int statusCode;
-    private String message;
+    private int statusCode = 200;
+    private String message = "OK";
     private int count;
     private List<T> objects = Lists.newArrayList();
 

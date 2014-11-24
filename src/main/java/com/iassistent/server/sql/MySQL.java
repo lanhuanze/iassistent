@@ -14,6 +14,6 @@ public interface MySQL {
                 "`ip`,\n" +
                 "`carrier`)\n" +
                 "VALUES\n" +
-                "(?,?,?,?,?,?,?,?)";
+                "(?,?,?,?,?,?,?)";
     }
 }

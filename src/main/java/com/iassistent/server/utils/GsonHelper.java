@@ -19,7 +19,7 @@ public class GsonHelper {
         return GSON.fromJson(json, type);
     }
 
-    public static Type fromJson(String json, Type type) {
+    public static <T> List<T> fromJson(String json, Type type) {
         return GSON.fromJson(json, type);
     }
 
