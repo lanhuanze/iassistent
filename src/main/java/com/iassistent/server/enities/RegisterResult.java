@@ -4,16 +4,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 /**
- * Created by lan on 11/24/14.
+ * Created by lan on 11/25/14.
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RegisterEntity {
+public class RegisterResult extends AbstractModule {
     private String email;
-    private String password;
     private String phoneNumber;
-    private String securityAnswer;
-    private int securityQuestionIndex;
+    private Date createTime;
+    private String authToken;
+    private String accountId;
+    private String deviceId;
 }

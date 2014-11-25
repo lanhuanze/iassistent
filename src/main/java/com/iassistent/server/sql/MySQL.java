@@ -16,4 +16,33 @@ public interface MySQL {
                 "VALUES\n" +
                 "(?,?,?,?,?,?,?)";
     }
+
+    interface AccountSQL {
+        String CREATE_ACCOUNT = "INSERT INTO `iassistent`.`account`\n" +
+                "(`id`,\n" +
+                "`username`,\n" +
+                "`email`,\n" +
+                "`phonenumber`,\n" +
+                "`password`,\n" +
+                "`salt`,\n" +
+                "`createtime`,\n" +
+                "`securityquestionindex`,\n" +
+                "`securityanswer`)\n" +
+                "VALUES\n" +
+                "(?,?,?,?,?,?,?,?,?)";
+        String CREATE_DEVICE = "INSERT INTO `iassistent`.`device`\n" +
+                "(`id`,\n" +
+                "`accountid`,\n" +
+                "`displayname`,\n" +
+                "`handshaketoken`,\n" +
+                "`networktype`,\n" +
+                "`lastaccesstime`,\n" +
+                "`createtime`,\n" +
+                "`status`,\n" +
+                "`deviceos`,\n" +
+                "`deviceosversion`,\n" +
+                "`locale`)\n" +
+                "VALUES\n" +
+                "(?,?,?,?,?,?,?,?,?,?,?)";
+    }
 }
