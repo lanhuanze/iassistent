@@ -28,7 +28,7 @@ public class AnonymousServiceImpl implements AnonymousService {
         try {
             Type type = new TypeToken<List<AnonymousData>>() {
             }.getType();
-            List<AnonymousData> datas = GsonHelper.fromJson(json, type);
+            List<AnonymousData> datas = GsonHelper.jsonToList(json, type);
             if(CollectionUtils.isEmpty(datas)) {
                 r.setMessage("Empty request");
                 r.setStatusCode(400);

@@ -8,6 +8,7 @@ import com.google.gson.JsonObject;
 
 import java.lang.reflect.Type;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by lan on 11/21/14.
@@ -19,7 +20,11 @@ public class GsonHelper {
         return GSON.fromJson(json, type);
     }
 
-    public static <T> List<T> fromJson(String json, Type type) {
+    public static <T> List<T> jsonToList(String json, Type type) {
+        return GSON.fromJson(json, type);
+    }
+
+    public static <K,V> Map<String, String> jsonToMap(String json, Type type) {
         return GSON.fromJson(json, type);
     }
 

@@ -45,4 +45,27 @@ public interface MySQL {
                 "VALUES\n" +
                 "(?,?,?,?,?,?,?,?,?,?,?)";
     }
+
+        interface ActionSQL {
+                String CREATE = "INSERT INTO `iassistent`.`actions`\n" +
+                        "(`id`,\n" +
+                        "`action`,\n" +
+                        "`expiretime`,\n" +
+                        "`extra`,\n" +
+                        "`status`)\n" +
+                        "VALUES(?,?,?,?,?)";
+                String UPDATE_STATUS = "UPDATE `iassistent`.`actions`\n" +
+                        "SET `status` = ? WHERE `id` = ?";
+                String UPDATE_EXTRA = "UPDATE `iassistent`.`actions`\n" +
+                        "SET `extra` = ? WHERE `id` = ?";
+                String UPDATE_STATUS_AND_EXTRA = "UPDATE `iassistent`.`actions`\n" +
+                        "SET `status` = ?, `extra`=? WHERE `id` = ?";
+
+                String BY_ID = "SELECT `actions`.`id`,\n" +
+                        "    `actions`.`action`,\n" +
+                        "    `actions`.`expiretime`,\n" +
+                        "    `actions`.`extra`,\n" +
+                        "    `actions`.`status`\n" +
+                        "FROM `iassistent`.`actions` WHERE `actions`.`id` = ?";
+        }
 }

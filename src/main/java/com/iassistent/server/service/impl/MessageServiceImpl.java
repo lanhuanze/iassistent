@@ -13,7 +13,6 @@ import com.iassistent.server.utils.RemoteAddressHelper;
 import com.pubnub.api.Callback;
 import com.pubnub.api.Pubnub;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.CollectionUtils;
 
 import javax.servlet.http.HttpServletRequest;
@@ -33,7 +32,7 @@ public class MessageServiceImpl implements MessageService {
         try {
             Type type = new TypeToken<List<MessageEntity>>() {
             }.getType();
-            List<MessageEntity> mes = GsonHelper.fromJson(jsonMessage, type);
+            List<MessageEntity> mes = GsonHelper.jsonToList(jsonMessage, type);
             if(CollectionUtils.isEmpty(mes)) {
                 r.setCount(0);
                 r.setMessage("Format error.");
@@ -83,7 +82,7 @@ public class MessageServiceImpl implements MessageService {
         String ip = RemoteAddressHelper.getRemoteIpFrom(req);
         log.info("remote ip:" + ip);
         Result<ActionEntity> r = Result.newResult();
-        r.add(new ActionEntity("open_vnc_server"));
+        r.add(new ActionEntity());
         return r;
     }
 
