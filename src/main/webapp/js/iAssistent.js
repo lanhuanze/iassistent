@@ -3,6 +3,5 @@
  */
 
 var sendVNC = function () {
-    jQuery("#vncFrame").css("display","block");
-
+    remoteControlRequest();
 } 

@@ -41,7 +41,7 @@ public class AccountServiceImpl implements AccountService {
 
                 a.setCreateTime(new Date());
                 a.setEmail(re.getEmail());
-                a.setPhoneNumber(re.getPhoneNumber());
+                //a.setPhoneNumber(re.getPhoneNumber());
                 a.setSalt(UUID.randomUUID().toString());
                 a.setPassword(hashPassword(re.getPassword(), a.getSalt()));
                 a.setSecurityAnswer(re.getSecurityAnswer());
@@ -58,11 +58,11 @@ public class AccountServiceImpl implements AccountService {
                     device.setId(UUID.randomUUID().toString());
                     device.setLastAccessTime(new Date());
                     device.setCreateTime(new Date());
-
+                    device.setPhoneNumber(re.getPhoneNumber());
                     int devRet = accountDao.createDevice(device);
                     //log.info("Create device returns:" + devRet);
                     result.setId(a.getId());
-                    result.setPhoneNumber(a.getPhoneNumber());
+                    result.setPhoneNumber(device.getPhoneNumber());
                     result.setEmail(a.getEmail());
                     result.setAuthToken(UUID.randomUUID().toString());
                     result.setAccountId(a.getId());

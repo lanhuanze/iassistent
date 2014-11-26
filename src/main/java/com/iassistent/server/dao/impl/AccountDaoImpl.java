@@ -22,7 +22,6 @@ public class AccountDaoImpl extends BaseDaoImpl implements AccountDao, MySQL.Acc
                 ps.setString(i++, a.getId());
                 ps.setString(i++, a.getUsername());
                 ps.setString(i++, a.getEmail());
-                ps.setString(i++, a.getPhoneNumber());
                 ps.setString(i++, a.getPassword());
                 ps.setString(i++, a.getSalt());
                 ps.setTimestamp(i++, toTimestamp(a.getCreateTime()));
@@ -51,6 +50,7 @@ public class AccountDaoImpl extends BaseDaoImpl implements AccountDao, MySQL.Acc
                 ps.setString(i++, d.getDeviceOs());
                 ps.setString(i++, d.getDeviceOsVersion());
                 ps.setString(i++, d.getLocale());
+                ps.setString(i++, d.getPhoneNumber());
             }
         };
 

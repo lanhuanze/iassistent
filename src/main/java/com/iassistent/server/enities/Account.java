@@ -13,12 +13,11 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Account extends AbstractModule {
-private String username;
+    private String username;
     private String password;
     private String salt;
     private String securityQuestionIndex;
     private String securityAnswer;
     private String email;
-    private String phoneNumber;
     private Date createTime;
 }

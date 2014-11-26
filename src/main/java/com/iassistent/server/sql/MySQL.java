@@ -22,14 +22,14 @@ public interface MySQL {
                 "(`id`,\n" +
                 "`username`,\n" +
                 "`email`,\n" +
-                "`phonenumber`,\n" +
+                //"`phonenumber`,\n" +
                 "`password`,\n" +
                 "`salt`,\n" +
                 "`createtime`,\n" +
                 "`securityquestionindex`,\n" +
                 "`securityanswer`)\n" +
                 "VALUES\n" +
-                "(?,?,?,?,?,?,?,?,?)";
+                "(?,?,?,?,?,?,?,?)";
         String CREATE_DEVICE = "INSERT INTO `iassistent`.`device`\n" +
                 "(`id`,\n" +
                 "`accountid`,\n" +
@@ -41,9 +41,10 @@ public interface MySQL {
                 "`status`,\n" +
                 "`deviceos`,\n" +
                 "`deviceosversion`,\n" +
-                "`locale`)\n" +
+                "`locale`,\n" +
+                "`phonenumber`)\n" +
                 "VALUES\n" +
-                "(?,?,?,?,?,?,?,?,?,?,?)";
+                "(?,?,?,?,?,?,?,?,?,?,?,?)";
     }
 
         interface ActionSQL {

@@ -23,4 +23,5 @@ public class Device extends AbstractModule {
     private String deviceOs;
     private String deviceOsVersion;
     private String locale;
+    private String phoneNumber;
 }

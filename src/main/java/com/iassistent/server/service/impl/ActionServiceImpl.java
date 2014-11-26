@@ -13,7 +13,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  * Created by lan on 11/26/14.
@@ -30,7 +32,8 @@ public class ActionServiceImpl implements ActionService {
             ActionEntity ae = GsonHelper.fromJson(json, ActionEntity.class);
             ae.setId(ID.id());
             if (ae.getExpireTime() == null) {
-                ae.setExpireTime(new Date(0));
+                Calendar cal = new GregorianCalendar(1970,01,02,8,00,00);
+                ae.setExpireTime(cal.getTime());
             }
             ae.setStatus(ActionEntity.Status.created.name());
             int ret = actionDao.create(ae);
