@@ -9,4 +9,8 @@
     <bean id="AccountService" class="com.iassistent.server.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="AccountDao"/>
     </bean>
+
+
+    <bean id="MessageService" class="com.iassistent.server.service.impl.MessageServiceImpl" init-method="init">
+    </bean>
 </beans>
