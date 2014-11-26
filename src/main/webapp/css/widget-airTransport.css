@@ -1,0 +1,460 @@
+
+.widget-airTransport .upload-drag-file-over {
+    background-color: #d4e9fc;
+    opacity: 0.5;
+}
+.widget-airTransport-item {
+    background-color: rgba(17, 17, 17, 0.7);
+    border-color: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21), 0 2px 6px 0 rgba(0, 0, 0, 0.42), 0 1px 0 rgba(255, 255, 255, 0.07) inset, 0 -8px 10px rgba(0, 0, 0, 0.1) inset;
+    height: auto;
+    overflow: hidden;
+    padding: 9px 9px 9px 10px;
+    position: relative;
+    width: 266px;
+}
+.widget-airTransport-item[m="clipboard"] {
+    padding-bottom: 7px;
+}
+.widget-airTransport-tabSelector {
+    background-color: rgba(17, 17, 17, 0.7);
+    border-color: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21), 0 2px 6px 0 rgba(0, 0, 0, 0.42), 0 1px 0 rgba(255, 255, 255, 0.07) inset, 0 -8px 10px rgba(0, 0, 0, 0.1) inset;
+    height: 62px;
+    padding: 9px 9px 9px 8px;
+    width: 266px;
+}
+.widget-airTransport-tab {
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    height: 64px;
+    margin-left: 2px;
+    position: relative;
+    text-align: center;
+    width: 64px;
+}
+.widget-airTransport-tab.active {
+    background-color: rgba(17, 17, 17, 0.4);
+}
+.widget-airTransport-url-input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0 none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24) inset;
+    height: 25px;
+    width: 217px;
+}
+.widget-airTransport-item .icon-search {
+    background: url("images/widget_AirTransport.png") no-repeat scroll 3px -81px rgba(17, 17, 17, 0.3);
+    border-radius: 3px;
+    cursor: pointer;
+    height: 14px;
+    left: 213px;
+    position: absolute;
+    top: 17px;
+    width: 14px;
+}
+.widget-airTransport-item .icon-search:hover {
+    background-color: rgba(17, 17, 17, 0.9);
+}
+.widget-airTransport-btn {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.15) inset;
+    color: lightgray;
+    cursor: pointer;
+    float: right;
+    height: 23px;
+    line-height: 20px;
+    text-align: center;
+}
+.widget-airTransport-blueBtn {
+    border-color: rgba(0, 0, 0, 0.45);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.15) inset;
+    float: right;
+}
+.widget-airTransport-btn:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    text-decoration: none;
+}
+.widget-airTransport-btn.disabled {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+}
+.widget-airTransport-btn.disabled:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    color: lightgray;
+}
+.widget-airTransport-url-open {
+    height: 23px;
+    margin-left: 9px;
+    margin-right: -3px;
+    margin-top: -29px;
+    width: 14px;
+}
+.widget-airTransport-clip-input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0 none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24) inset;
+    height: 60px;
+    overflow: hidden;
+    width: 212px;
+}
+.widget-airTransport-clip-read {
+    border-radius: 4px;
+    height: 25px;
+    margin-left: 2px;
+    width: 16px;
+}
+.widget-airTransport-clip-push {
+    border-radius: 4px;
+    height: 25px;
+    margin-left: 2px;
+    margin-top: -34px;
+    width: 16px;
+}
+.widget-airTransport-file-input, .widget-airTransport-app-input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    border-width: 1px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24) inset;
+    float: left;
+    height: 65px;
+    position: relative;
+    width: 219px;
+}
+.widget-airTransport-folder-upload {
+    height: 25px;
+    margin-left: 2px;
+    width: 16px;
+}
+.widget-airTransport-file-upload {
+    height: 25px;
+    margin-left: 8px;
+    margin-top: 4px;
+    overflow: hidden;
+    width: 16px;
+}
+.widget-airTransport-app-upload {
+    border-radius: 4px;
+    height: 60px;
+    margin-left: 2px;
+    overflow: hidden;
+    width: 16px;
+}
+.widget-airTransport-file-path {
+    color: #fff;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.widget-airTransport-file-path a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+.widget-airTransport-file-path a:hover {
+    text-decoration: underline;
+}
+.widget-airTransport-file-path .value {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    padding: 5px;
+    width: 164px;
+}
+.widget-airTransport-file-path .change {
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid #333;
+    border-top-right-radius: 4px;
+    font-weight: 700;
+    padding: 2px 5px 8px;
+}
+.widget-airTransport-file-path .upload-to {
+    padding: 5px 0;
+}
+.widget-airTransport-fileName {
+    max-width: 170px;
+}
+.widget-airTransport-file-con, .widget-airTransport-app-con {
+    height: 100px;
+    width: 266px;
+}
+.widget-airTransport-up {
+    border-bottom: 9px solid rgba(0, 0, 0, 0.8);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    margin-bottom: -1px;
+    margin-top: 5px;
+    position: relative;
+    width: 2px;
+}
+.widget-airTransport-up-file {
+    left: 36px;
+}
+.widget-airTransport-up-url {
+    left: 100px;
+}
+.widget-airTransport-up-clipboard {
+    left: 168px;
+}
+.widget-airTransport-up-app {
+    left: 234px;
+}
+.widget-airTransport-tab-icon {
+    background: url("images/widget_AirTransport.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 34px;
+    margin-left: 16px;
+    margin-top: 11px;
+    width: 34px;
+}
+.widget-airTransport-tab-file .widget-airTransport-tab-icon {
+    background-position: 4px 0;
+}
+.widget-airTransport-tab-url .widget-airTransport-tab-icon {
+    background-position: -59px 0;
+}
+.widget-airTransport-tab-clipboard .widget-airTransport-tab-icon {
+    background-position: -128px 0;
+}
+.widget-airTransport-tab-app .widget-airTransport-tab-icon {
+    background-position: -197px 0;
+}
+.widget-airTransport-tab-count {
+    background-color: #3db414;
+    border-radius: 6px;
+    color: #fff;
+    display: none;
+    height: 14px;
+    line-height: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    width: auto;
+}
+.widget-airTransport-tab-count.error {
+    background-color: red;
+    display: block;
+}
+.widget-airTransport-tab-name {
+    color: #fff;
+    max-width: 88px;
+}
+.widget-airTransport-uploadingProgress {
+    background: url("images/widget_AirTransport.png") no-repeat scroll 1px -102px transparent;
+    height: 66px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 1;
+}
+.widget-airTransport-cancelIcon {
+    background: url("images/widget_AirTransport.png") no-repeat scroll 3px -81px rgba(17, 17, 17, 0.6);
+    border-radius: 3px;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+}
+.widget-airTransport-cancelIcon:hover {
+    background-color: rgba(17, 17, 17, 0.8);
+}
+.widget-airTransport-uploadingCancel {
+    bottom: 4px;
+    display: none;
+    position: absolute;
+    right: 7px;
+    z-index: 5;
+}
+.widget-airTransport-uploadingItem {
+    padding: 13px 11px 11px 14px;
+}
+.widget-airTransport-uploadingName {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    max-width: 198px;
+    position: relative;
+    z-index: 3;
+}
+.widget-airTransport-uploadingSpeed {
+    color: #0d7201;
+    font-weight: 700;
+    margin-top: 7px;
+    position: relative;
+    z-index: 2;
+}
+.widget-airTransport-uploadItem {
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 6px 4px 10px;
+    position: relative;
+    width: 236px;
+}
+.widget-airTransport-uploadItem:hover {
+    background-color: rgba(17, 17, 17, 0.2);
+}
+.widget-airTransport-uploadItem:hover .widget-airTransport-fileDel, .widget-airTransport-uploadingItem:hover .widget-airTransport-uploadingCancel {
+    display: block;
+}
+.widget-airTransport-fileDel {
+    background-color: rgba(17, 17, 17, 0.2);
+    display: none;
+    position: absolute;
+    right: 13px;
+    top: 6px;
+}
+.widget-airTransport-Drag-tip {
+    color: #6e6d6b;
+    height: 60%;
+    max-width: 400px;
+    min-width: 200px;
+    padding: 17px 10px 10px;
+    text-align: center;
+    width: 60%;
+}
+.widget-airTransport-result {
+    clear: both;
+    color: #fff;
+    display: none;
+    margin-left: 6px;
+    padding-top: 6px;
+}
+.widget-airTransport-result.error {
+    margin-bottom: 2px;
+}
+.widget-airTransport-folder-upload > div {
+    background: url("images/widget_AirTransport.png") no-repeat scroll -1px -48px rgba(0, 0, 0, 0);
+    height: 22px;
+    width: 21px;
+}
+.widget-airTransport-folder-upload.disabled > div {
+    opacity: 0.3;
+}
+.widget-airTransport-file-upload .widget-airTransport-file-icon {
+    background: url("images/widget_AirTransport.png") no-repeat scroll -29px -48px rgba(0, 0, 0, 0);
+    height: 22px;
+    width: 21px;
+}
+.widget-airTransport-url-open > div {
+    background: url("images/widget_AirTransport.png") no-repeat scroll -81px -50px rgba(0, 0, 0, 0);
+    height: 21px;
+    width: 21px;
+}
+.widget-airTransport-clip-read > div {
+    background: url("images/widget_AirTransport.png") no-repeat scroll -55px -49px rgba(0, 0, 0, 0);
+    height: 21px;
+    width: 21px;
+}
+.widget-airTransport-clip-push > div {
+    background: url("images/widget_AirTransport.png") no-repeat scroll -80px -49px rgba(0, 0, 0, 0);
+    height: 21px;
+    width: 21px;
+}
+.widget-airTransport-app-upload .widget-airTransport-app-icon {
+    background: url("images/widget_AirTransport.png") no-repeat scroll -106px -48px rgba(0, 0, 0, 0);
+    height: 22px;
+    margin-top: 18px;
+    width: 21px;
+}
+.widget-airTransport-top {
+    background: url("images/widget_AirTransport.png") no-repeat scroll -44px -77px rgba(0, 0, 0, 0);
+    height: 21px;
+    width: 130px;
+}
+.widget-airTransport-fileError {
+    background: url("images/widget_AirTransport.png") no-repeat scroll -25px -79px rgba(0, 0, 0, 0);
+    display: none;
+    float: left;
+    height: 14px;
+    margin-right: 7px;
+    width: 14px;
+}
+.widget-airTransport-clearError {
+    background-color: rgba(17, 17, 17, 0.4);
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+    margin-bottom: -3px;
+    margin-top: 5px;
+}
+.widget-airTransport-clearError:hover {
+    background-color: rgba(17, 17, 17, 0.8);
+}
+.widget-airTransport-clearIcon {
+    background-color: transparent;
+    float: left;
+    margin-left: 2px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+.widget-airTransport-clearTip {
+    color: #fff;
+    float: left;
+    line-height: 19px;
+    margin-right: 4px;
+}
+.widget-airTransport-proceed {
+    background-image: linear-gradient(-90deg, #f9dc86 0px, #e9d172 100%);
+    border-radius: 4px;
+    box-shadow: 0 -1px 0 #d6c685 inset, 0 1px 0 #d6c685 inset;
+    display: none;
+    height: 63px;
+    margin-left: 1px;
+    margin-top: 1px;
+    text-align: center;
+    width: 218px;
+}
+.widget-airTransport-proIcon {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    position: absolute;
+    right: 6px;
+    top: 28px;
+}
+.widget-airTransport-proTip {
+    font-weight: 700;
+    height: 63px;
+    padding-top: 15px;
+    text-align: center;
+    width: 153px;
+}
+.widget-airTransport-reinstall {
+    background: url("images/feature/reinstall.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    right: 28px;
+    top: 27px;
+    visibility: hidden;
+    width: 18px;
+}
+.widget-airTransport-reinstall:hover {
+    background-position: -20px 0;
+}
+.widget-airTransport-file-upload-area {
+    height: 30px;
+    left: -10px;
+    opacity: 0;
+    position: relative;
+    top: -24px;
+    width: 36px;
+}
+.widget-airTransport-app-upload-area {
+    height: 70px;
+    left: -10px;
+    opacity: 0;
+    position: relative;
+    top: -42px;
+    width: 40px;
+}

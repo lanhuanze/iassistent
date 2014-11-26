@@ -1,0 +1,362 @@
+
+.widget-summary {
+    background: url("images/widget.png") no-repeat scroll 0 -252px transparent;
+    color: #fff;
+    display: block;
+    height: 160px;
+    line-height: 41px;
+    position: absolute;
+    text-align: center;
+    text-indent: 50px;
+    width: 306px;
+    z-index: 2;
+}
+.widget-summary-phone {
+    bottom: -7px;
+    left: -16px;
+    position: absolute;
+}
+.widget-summary-phoneName {
+    font-size: 26px;
+    left: 84px;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    text-indent: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 204px;
+}
+.widget-summary-phoneOS {
+    color: #8399b0;
+    left: 85px;
+    max-width: 200px;
+    position: absolute;
+    text-align: left;
+    text-indent: 0;
+    top: 25px;
+}
+.widget-summary-phoneLoad {
+    height: 10px;
+    left: 92px;
+    margin-left: 37px;
+    position: absolute;
+    top: 83px;
+    width: 70px;
+}
+.widget-summary-phoneLoad span {
+    font-size: 15px;
+    margin-left: -34px;
+}
+.widget-summary-phoneMem {
+    background: url("images/widget.png") no-repeat scroll 0 0 transparent;
+    color: #fff;
+    font-weight: 700;
+    height: 20px;
+    left: 84px;
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 55px;
+    width: 202px;
+}
+.widget-summary-phoneSD {
+    background: url("images/widget.png") no-repeat scroll 0 0 transparent;
+    color: #fff;
+    font-weight: 700;
+    height: 20px;
+    left: 84px;
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    width: 202px;
+}
+.widget-summary-phoneExSD {
+    background: url("images/widget.png") no-repeat scroll 0 0 transparent;
+    color: #fff;
+    font-weight: 700;
+    height: 20px;
+    left: 84px;
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 105px;
+    width: 202px;
+}
+.widget-summary .widget-summary-opCon {
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+    right: 21px;
+}
+.widget-summary .widget-summary-opCon > div {
+    background: none repeat scroll 0 0 #474246;
+    border-radius: 9px;
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    min-width: 70px;
+    padding: 0 4px;
+    text-indent: 0;
+}
+.widget-summary .widget-summary-opCon > div span {
+    max-width: 79px;
+}
+.widget-summary .widget-summary-opCon > div.widget-summary-detail {
+    right: 107px;
+}
+.widget-summary .widget-summary-opCon > div.widget-summary-switch {
+    margin-left: 11px;
+    right: 19px;
+}
+.widget-summary .widget-summary-opCon > div:hover {
+    background: none repeat scroll 0 0 #676266;
+}
+.widget-summary .widget-summary-opCon > div > span {
+    display: inline-block;
+    line-height: 20px;
+}
+.widget-summary-sysInfo {
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+    width: 100%;
+}
+.widget-summary-sdInfo {
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+    width: 100%;
+}
+.widget-summary div {
+    cursor: default;
+}
+.widget-summary-sysUsed, .widget-summary-sdUsed {
+    background: url("images/widget.png") no-repeat scroll 0 -28px transparent;
+    float: left;
+    left: 0;
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+}
+.widget-summary-sysAvail, .widget-summary-sdAvail {
+    float: left;
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-indent: 0;
+}
+.widget-summary-sysIcon {
+    background: url("images/widget.png") no-repeat scroll -213px 1px transparent;
+    height: 14px;
+    left: 10px;
+    position: absolute;
+    top: 1px;
+    width: 14px;
+    z-index: 1;
+}
+.widget-summary-memIcon {
+    background: url("images/widget.png") no-repeat scroll -213px -29px transparent;
+    height: 14px;
+    left: 10px;
+    position: absolute;
+    top: 1px;
+    width: 14px;
+    z-index: 1;
+}
+.widget-summaryDetail {
+    background-color: #f4f5f7;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    cursor: default;
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+}
+.widget-summaryDetail-phoneImg {
+    left: 20px;
+    position: absolute;
+    top: 40px;
+}
+.widget-summaryDetail-title {
+    left: 250px;
+    line-height: 27px;
+    position: absolute;
+    top: 55px;
+}
+.widget-summaryDetail-titleModel {
+    display: inline-block;
+    float: left;
+    font-size: 24px;
+}
+.widget-summaryDetail-titleOS {
+    color: #8399b0;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.widget-summaryDetail-list {
+    left: 260px;
+    position: absolute;
+    top: 150px;
+}
+.widget-summaryDetail-item {
+    cursor: pointer;
+    float: left;
+    height: 80px;
+    width: 72px;
+}
+.widget-summaryDetail-item:hover .text {
+    background-color: #0069d6;
+    border-radius: 9px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.widget-summaryDetail-item .img {
+    background: url("images/main.png") no-repeat scroll 0 0 transparent;
+    height: 42px;
+    width: 100%;
+}
+.widget-summaryDetail-item .text {
+    font-weight: 700;
+    height: 18px;
+    margin-left: -3px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 78px;
+}
+.widget-summaryDetail-item .extra {
+    color: #8399b0;
+    text-align: center;
+    width: 100%;
+}
+.widget-summaryDetail-contact .img {
+    background-position: -325px 8px;
+}
+.widget-summaryDetail-sms .img {
+    background-position: -377px 8px;
+}
+.widget-summaryDetail-app .img {
+    background-position: -433px 8px;
+}
+.widget-summaryDetail-music .img {
+    background-position: -488px 8px;
+}
+.widget-summaryDetail-video .img {
+    background-position: -541px 8px;
+}
+.widget-summaryDetail-book .img {
+    background-position: -594px 8px;
+}
+.widget-summaryDetail-photo .img {
+    background-position: -648px 8px;
+}
+.widget-summaryDetail-contact:hover .img {
+    background-position: -325px -46px;
+}
+.widget-summaryDetail-sms:hover .img {
+    background-position: -377px -46px;
+}
+.widget-summaryDetail-app:hover .img {
+    background-position: -433px -46px;
+}
+.widget-summaryDetail-music:hover .img {
+    background-position: -488px -46px;
+}
+.widget-summaryDetail-video:hover .img {
+    background-position: -541px -46px;
+}
+.widget-summaryDetail-book:hover .img {
+    background-position: -594px -46px;
+}
+.widget-summaryDetail-photo:hover .img {
+    background-position: -648px -46px;
+}
+.widget-summaryDetail-storage, .widget-summaryDetail-sdStorage, .widget-summaryDetail-exsdStorage {
+    height: 50px;
+    left: 250px;
+    position: absolute;
+    width: 506px;
+}
+.widget-summaryDetail-storage {
+    top: 260px;
+}
+.widget-summaryDetail-sdStorage {
+    top: 305px;
+}
+.widget-summaryDetail-exsdStorage {
+    top: 370px;
+}
+.widget-summaryDetail .bar {
+    background: none repeat scroll 0 0 #dee2e9;
+    border-radius: 15px;
+    color: #fff;
+    height: 12px;
+    position: relative;
+    top: 5px;
+    width: 506px;
+}
+.widget-summaryDetail .using {
+    background: none repeat scroll 0 0 #35ad00;
+    border-radius: 15px;
+    height: 12px;
+    left: 0;
+    line-height: 13px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: width 1s ease 0s;
+    width: 12px;
+}
+.widget-summaryDetail-sdStorage .smusic, .widget-summaryDetail-sdStorage .svideo, .widget-summaryDetail-sdStorage .sphoto, .widget-summaryDetail-sdStorage .sother {
+    border-radius: 15px;
+    height: 12px;
+    line-height: 14px;
+    margin-right: -8px;
+    transition: width 1s ease 0s;
+    width: 12px;
+}
+.widget-summaryDetail-sdStorage .smusic {
+    background: none repeat scroll 0 0 #2ec5c8;
+}
+.widget-summaryDetail-sdStorage .svideo {
+    background: none repeat scroll 0 0 #b5a1dd;
+}
+.widget-summaryDetail-sdStorage .sphoto {
+    background: none repeat scroll 0 0 #f4974d;
+}
+.widget-summaryDetail-sdStorage .sother {
+    background: none repeat scroll 0 0 #d77a80;
+}
+.widget-summaryDetail-sdStorage .stip {
+    margin-top: 11px;
+}
+.widget-summaryDetail-sdStorage .stip .smusic, .widget-summaryDetail-sdStorage .stip .svideo, .widget-summaryDetail-sdStorage .stip .sphoto, .widget-summaryDetail-sdStorage .stip .sother {
+    margin: 2px 5px 0 0;
+}
+.contactinfo .jspHorizontalBar, #file_tree .jspHorizontalBar {
+    bottom: -1px;
+    height: 1px;
+}
+.widget-summary .ai-icon-refresh {
+    bottom: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 206px;
+}
+.widget-summaryDetail {
+    height: 100%;
+    width: 100%;
+}
+.widget-summaryDetail img::-moz-selection {
+    background: none repeat scroll 0 0 transparent;
+}

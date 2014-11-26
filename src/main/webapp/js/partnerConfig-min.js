@@ -1,0 +1,1 @@
+Airdroid.PartnerConfig={Themer:{url:"https://api.themerapp.com/themes/airdroid#/themes/trending",appId:"com.mycolorscreen.themer",playUrl:"https://play.google.com/store/apps/details?id=com.mycolorscreen.themer&referrer=utm_source%3Dairdroid%26utm_medium%3Dandroid",api:{broadcastAction:"com.mycolorscreen.themer.INTENT_APPLY_THEME"}}};

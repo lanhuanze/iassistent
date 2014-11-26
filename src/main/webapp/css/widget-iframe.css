@@ -1,0 +1,51 @@
+
+.widget-iframe {
+    transition: opacity 2s ease 0s;
+}
+.widget-iframe-close {
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    color: #fff;
+    display: none;
+    font-size: 33px;
+    height: 20px;
+    position: absolute;
+    right: -5px;
+    text-align: center;
+    top: -10px;
+    width: 20px;
+    z-index: 10;
+}
+.widget-iframe-close:hover {
+    background-color: #b22222;
+    color: #fff;
+}
+.widget-blinker {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-timing-function: linear;
+}
+@keyframes blinker {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+@keyframes blinker {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
