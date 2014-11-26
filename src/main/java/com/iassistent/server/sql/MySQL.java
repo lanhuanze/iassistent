@@ -52,8 +52,8 @@ public interface MySQL {
                         "`action`,\n" +
                         "`expiretime`,\n" +
                         "`extra`,\n" +
-                        "`status`)\n" +
-                        "VALUES(?,?,?,?,?)";
+                        "`status`, `target`)\n" +
+                        "VALUES(?,?,?,?,?,?)";
                 String UPDATE_STATUS = "UPDATE `iassistent`.`actions`\n" +
                         "SET `status` = ? WHERE `id` = ?";
                 String UPDATE_EXTRA = "UPDATE `iassistent`.`actions`\n" +
@@ -65,7 +65,16 @@ public interface MySQL {
                         "    `actions`.`action`,\n" +
                         "    `actions`.`expiretime`,\n" +
                         "    `actions`.`extra`,\n" +
-                        "    `actions`.`status`\n" +
+                        "    `actions`.`status`,\n" +
+                        "    `actions`.`target` \n" +
                         "FROM `iassistent`.`actions` WHERE `actions`.`id` = ?";
+                String BY_STATUS = "SELECT `actions`.`id`,\n" +
+                        "    `actions`.`action`,\n" +
+                        "    `actions`.`expiretime`,\n" +
+                        "    `actions`.`extra`,\n" +
+                        "    `actions`.`status`,\n" +
+                        "    `actions`.`target`,\n" +
+                        "    `actions`.`createtime` \n" +
+                        "FROM `iassistent`.`actions`  WHERE `actions`.`status` = ? ORDER BY createtime DESC LIMIT ?,?";
         }
 }

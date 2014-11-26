@@ -10,7 +10,14 @@
         <property name="accountDao" ref="AccountDao"/>
     </bean>
 
+    <bean id="ActionService" class="com.iassistent.server.service.impl.ActionServiceImpl">
+        <property name="actionDao" ref="ActionDao"/>
+    </bean>
 
-    <bean id="MessageService" class="com.iassistent.server.service.impl.MessageServiceImpl" init-method="init">
+
+    <bean id="MessageService" class="com.iassistent.server.daemon.MessageService" init-method="init" destroy-method="destroy">
+        <property name="actionDao" ref="ActionDao"/>
+        <property name="batchSize" value="100"/>
+        <property name="sleepInterval" value="15000"/>
     </bean>
 </beans>

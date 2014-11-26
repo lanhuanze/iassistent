@@ -8,4 +8,5 @@
 
     <bean id="AnonymousDataDao" class="com.iassistent.server.dao.impl.AnonymousDataDaoImpl" parent="BaseDao"/>
     <bean id="AccountDao" class="com.iassistent.server.dao.impl.AccountDaoImpl" parent="BaseDao"/>
+    <bean id="ActionDao" class="com.iassistent.server.dao.impl.ActionDaoImpl" parent="BaseDao"/>
 </beans>

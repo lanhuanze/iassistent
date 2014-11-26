@@ -5,11 +5,11 @@
 var remoteControlRequest = function() {
     var message = {};
     message.action="poll";
-    message.deviceId = "f4deffa7-ca87-4c0d-8447-b8e8b4772750";
+    message.target = "f4deffa7-ca87-4c0d-8447-b8e8b4772750";
     $.ajax({
         type : "PUT", // 访问WebService使用Post方式请求
         contentType : "application/json;charset=UTF-8",
-        url : "message/v1/publish",
+        url : "action/v1/create",
         data : JSON.stringify(message),
         dataType : 'json', // WebService 会返回Json类型
 

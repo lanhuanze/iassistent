@@ -18,9 +18,19 @@ public class ActionEntity extends AbstractModule{
     private String action;
     private Date expireTime;
     private String status;
+    private String target;
+    private Date createTime;
     private Map<String, String> extra = Maps.newHashMap();
 
+    public String addExtra(Extra k, String v) {
+        return extra.put(k.name(), v);
+    }
+
     public static enum Status {
-        created,sent,responded,finished
+        created,sent,retrieved,responded,finished
+    }
+
+    public static enum Extra {
+        ip
     }
 }
