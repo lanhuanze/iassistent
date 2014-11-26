@@ -141,6 +141,7 @@ public class ActionDaoImpl extends BaseDaoImpl implements ActionDao, MySQL.Actio
             e.setStatus(rs.getString("status"));
             e.setExtra(fromJson(rs.getString("extra")));
             e.setTarget(rs.getString("target"));
+            e.setCreateTime(getDate(rs, "createtime"));
         }catch(SQLException sqle) {
             log.error("extraActionEntity get error:" + sqle.getMessage());
             return null;

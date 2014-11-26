@@ -66,7 +66,8 @@ public interface MySQL {
                         "    `actions`.`expiretime`,\n" +
                         "    `actions`.`extra`,\n" +
                         "    `actions`.`status`,\n" +
-                        "    `actions`.`target` \n" +
+                        "    `actions`.`target`, \n" +
+                        "    `actions`.`createtime` \n" +
                         "FROM `iassistent`.`actions` WHERE `actions`.`id` = ?";
                 String BY_STATUS = "SELECT `actions`.`id`,\n" +
                         "    `actions`.`action`,\n" +
