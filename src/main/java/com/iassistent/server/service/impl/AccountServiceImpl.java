@@ -12,7 +12,6 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.util.CollectionUtils;
 
 import java.lang.reflect.Type;
-import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -31,7 +30,7 @@ public class AccountServiceImpl implements AccountService {
         try {
             Type type = new TypeToken<List<RegisterEntity>>() {
             }.getType();
-            List<RegisterEntity> res = GsonHelper.fromJson(json, type);
+            List<RegisterEntity> res = GsonHelper.jsonToList(json, type);
 
             if(CollectionUtils.isEmpty(res)) {
                 r.setStatusCode(404);
